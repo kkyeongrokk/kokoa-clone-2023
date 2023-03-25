@@ -9,18 +9,18 @@
 </head>
 <body>
     <div class="status-bar">
-        <div class="status-bar__column"></div>
+        <div class="status-bar__column">
             <span>No Service</span>
             <!-- To Do: WifiIcon -->
             <i class="fa-solid fa-wifi"></i>
-              
+        </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>100%</span>
             <!-- Battery Icon -->
-            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
             <!-- Lightening Iccon -->
             <i class="fa-solid fa-bolt"></i>
         </div>
@@ -28,16 +28,19 @@
 
     <header class="welcome-header">
         <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number</p>
+        <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
     </header>
 
-    <form id="login-form">
-        <input type="text" placeholder="Email or phone Number">
-        <input type="password" placeholder="Password">
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone Number">
+        <input name="password" type="password" placeholder="Password">
         <input type="submit" value="Log In">
         <a href="#">Find Kokoa Account or Password</a>
     </form>
 
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+    </div>
    
 
     <script src="https://kit.fontawesome.com/7e1170b131.js" crossorigin="anonymous"></script>
